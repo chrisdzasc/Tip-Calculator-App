@@ -1,4 +1,13 @@
 /*  =================================================
+    Custom Fonts
+    =================================================   */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../assets/fonts/SpaceMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+    
+/*  =================================================
     CSS Reset
     =================================================   */
 
@@ -60,4 +69,39 @@ h1, h2, h3, h4, h5, h6 {
 /* 11. 10 pixels = 1rem */
 html {
   font-size: 62.5%;
+}
+
+/*  =================================================
+    Typography Utilities
+    =================================================   */
+.text--p1 {
+  font-size: 4.8rem;
+  line-height: 7.1rem;
+  letter-spacing: -0.1rem;
+}
+
+.text--p2 {
+  font-size: 3.2rem;
+  line-height: 4.7rem;
+  letter-spacing: -0.067rem;
+}
+
+.text--p3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+.text--p4 {
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+}
+
+.text--p5 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.text--p6 {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
 }
