@@ -29,6 +29,16 @@
   --green-900: hsl(183, 100%, 15%);
 
   --orange-400: hsl(13, 70%, 60%);
+
+  --spacing-100: 0.8rem;
+  --spacing-200: 1.6rem;
+  --spacing-300: 2.4rem;
+  --spacing-400: 3.2rem;
+  --spacing-600: 4.8rem;
+  --spacing-1000: 8.0rem;
+  --spacing-1200: 9.6rem;
+  --spacing-1500: 12.0rem;
+  --spacing-1600: 12.8rem;
 }
 
 /*  =================================================
