@@ -144,6 +144,9 @@ html {
     Base Styles
     =================================================   */
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   min-height: 100vh;
@@ -154,4 +157,14 @@ body {
   display: flex;
   justify-content: center;
   margin: 4.1rem 0;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  max-width: 45.0rem;
+  padding: var(--spacing-400) var(--spacing-300);
+  background-color: var(--white);
+  border-radius: 2.5rem;
 }
