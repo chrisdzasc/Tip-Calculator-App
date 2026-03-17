@@ -139,3 +139,19 @@ html {
   font-size: 1.3rem;
   line-height: 1.9rem;
 }
+
+/*  =================================================
+    Base Styles
+    =================================================   */
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  min-height: 100vh;
+  background-color: var(--green-200);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 4.1rem 0;
+}
