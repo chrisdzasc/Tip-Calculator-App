@@ -174,3 +174,36 @@ body {
   flex-direction: column;
   gap: var(--spacing-400);
 }
+
+.bill {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  padding: 0;
+  border: none;
+}
+
+.bill__title {
+  color: var(--grey-500);
+}
+
+.bill__input {
+  position: relative;
+}
+
+.bill__input img {
+  position: absolute;
+  top: 1.7rem;
+  left: 2rem;
+}
+
+.bill__input input {
+  width: 100%;
+  padding: var(--spacing-100) var(--spacing-200);
+  color: var(--green-900);
+  text-align: right;
+  background-color: var(--grey-50);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
