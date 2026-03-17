@@ -168,3 +168,9 @@ body {
   background-color: var(--white);
   border-radius: 2.5rem;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+}
