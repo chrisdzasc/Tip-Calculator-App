@@ -399,4 +399,9 @@ body {
   .grid__write-button {
     padding: 0;
   }
+
+  .results-container {
+    gap: var(--spacing-1600);
+    width: 41.3rem;
+  }
 }
