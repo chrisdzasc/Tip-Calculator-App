@@ -384,6 +384,14 @@ body {
     Desktop Styles
     =================================================   */
 @media (min-width: 1440px) {
+  body {
+    padding: 0;
+  }
+
+  .header {
+    margin-top: 0;
+  }
+
   .calculator {
     flex-direction: row;
     gap: var(--spacing-600);
