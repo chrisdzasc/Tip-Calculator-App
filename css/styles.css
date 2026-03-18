@@ -329,3 +329,12 @@ body {
   background-color: var(--green-200);
   cursor: pointer;
 }
+
+/*  =================================================
+    Tablet Styles
+    =================================================   */
+@media (min-width: 768px) {
+  body {
+    justify-content: center;
+  }
+}
