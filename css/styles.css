@@ -395,4 +395,8 @@ body {
     gap: 4.0rem;
     max-width: 37.9rem;
   }
+
+  .grid__write-button {
+    padding: 0;
+  }
 }
