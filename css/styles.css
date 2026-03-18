@@ -353,4 +353,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
+  .results-container {
+    gap: var(--spacing-200);
+    padding: var(--spacing-300) var(--spacing-400);
+  }
 }
