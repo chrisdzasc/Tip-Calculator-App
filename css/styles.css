@@ -339,6 +339,7 @@ body {
   }
 
   .calculator {
+    gap: 4.0rem;
     padding: var(--spacing-600) var(--spacing-1000);
     max-width: 60.8rem;
     border-radius: 2.5rem;
