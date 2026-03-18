@@ -337,4 +337,10 @@ body {
   body {
     justify-content: center;
   }
+
+  .calculator {
+    padding: var(--spacing-600) var(--spacing-1000);
+    max-width: 60.8rem;
+    border-radius: 2.5rem;
+  }
 }
