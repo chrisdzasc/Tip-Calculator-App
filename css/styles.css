@@ -336,6 +336,7 @@ body {
 @media (min-width: 768px) {
   body {
     justify-content: center;
+    padding-bottom: 4.1rem;
   }
 
   .calculator {
