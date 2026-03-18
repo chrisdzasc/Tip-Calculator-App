@@ -21,7 +21,7 @@
   </header>
 
   <main class="calculator">
-    <form class="form">
+    <form class="form" id="form-tip">
       <fieldset class="fieldset">
         <label class="fieldset__title text--p5" for="bill">Bill</label>
         <div class="fieldset__input">
@@ -33,7 +33,7 @@
       </fieldset>
 
       <fieldset class="tip-percentage">
-        <p class="tip-percentage__heading text--p5">Select Tip %</p>
+        <legend class="tip-percentage__heading text--p5">Select Tip %</legend>
 
         <div class="grid">
           <div>
@@ -101,7 +101,7 @@
         </div>
       </div>
 
-      <button class="reset-button text--p4" type="reset">Reset</button>
+      <button class="reset-button text--p4" type="reset" form="form-tip">Reset</button>
     </section>
   </main>
   
