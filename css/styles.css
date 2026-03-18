@@ -390,4 +390,9 @@ body {
     padding: var(--spacing-400);
     max-width: 92.0rem;
   }
+
+  .form {
+    gap: 4.0rem;
+    max-width: 37.9rem;
+  }
 }
