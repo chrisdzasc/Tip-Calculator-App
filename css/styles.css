@@ -344,4 +344,8 @@ body {
     max-width: 60.8rem;
     border-radius: 2.5rem;
   }
+
+  .form {
+    gap: var(--spacing-300);
+  }
 }
