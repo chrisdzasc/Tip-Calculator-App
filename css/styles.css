@@ -131,6 +131,10 @@ input[type=number] {
   letter-spacing: -0.067rem;
 }
 
+.text--p2--green {
+  color: var(--green-400);
+}
+
 .text--p3 {
   font-size: 2.4rem;
   line-height: 3.6rem;
@@ -146,9 +150,17 @@ input[type=number] {
   line-height: 2.4rem;
 }
 
+.text--p5--white {
+  color: var(--white);
+}
+
 .text--p6 {
   font-size: 1.3rem;
   line-height: 1.9rem;
+}
+
+.text--p6--grey {
+  color: var(--grey-400);
 }
 
 /*  =================================================
@@ -279,5 +291,41 @@ body {
   border-radius: 0.5rem;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  padding: var(--spacing-300);
+  background-color: var(--green-900);
+  border-radius: 1.5rem;
+}
+
+.results-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.money {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset-button {
+  padding: var(--spacing-100) var(--spacing-400);
+  width: 100%;
+  color: var(--green-800);
+  background-color: var(--green-750);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.reset-button:hover {
+  color: var(--green-900);
+  background-color: var(--green-200);
   cursor: pointer;
 }
