@@ -379,3 +379,15 @@ body {
     padding: var(--spacing-100) 4.0rem;
   }
 }
+
+/*  =================================================
+    Desktop Styles
+    =================================================   */
+@media (min-width: 1440px) {
+  .calculator {
+    flex-direction: row;
+    gap: var(--spacing-600);
+    padding: var(--spacing-400);
+    max-width: 92.0rem;
+  }
+}
