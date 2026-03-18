@@ -186,7 +186,7 @@ body {
   gap: var(--spacing-400);
 }
 
-.bill {
+.fieldset {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-100);
@@ -194,21 +194,21 @@ body {
   border: none;
 }
 
-.bill__title {
+.fieldset__title {
   color: var(--grey-500);
 }
 
-.bill__input {
+.fieldset__input {
   position: relative;
 }
 
-.bill__input img {
+.fieldset__input img {
   position: absolute;
   top: 1.7rem;
   left: 2rem;
 }
 
-.bill__input input {
+.fieldset__input input {
   width: 100%;
   padding: var(--spacing-100) var(--spacing-200);
   color: var(--green-900);
