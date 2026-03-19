@@ -1,0 +1,5 @@
+La calculadora tiene que hacer 2 operaciones:
+
+- El total tiene que ser multiplicado por el porcentaje que se va a dar de propina. Ese resultado de esa multiplicación se va a dividir entre el numero de personas y ese resultado va a ser el que se va a enseñar en la pantalla de "Tip Amount / person".
+
+- El total va dividido entre la cantidad de personas y ese resultado se le va a sumar el resultado que tenemos en el "Tip Amount / Person" y es el que se va a mostar en "Total / Person"
