@@ -23,8 +23,13 @@
   <main class="calculator">
     <form class="form" id="form-tip">
       <fieldset class="fieldset">
-        <label class="fieldset__title text--p5" for="bill">Bill</label>
-        <div class="fieldset__input">
+        <div class="bill-information">
+          <label class="fieldset__title text--p5" for="bill">Bill</label>
+
+          <p class="bill-information__error text--p5" id="billMessageError">Invalid number</p>
+        </div>
+
+        <div class="fieldset__input" id="billContainer">
 
           <img src="./images/icon-dollar.svg" alt="dollar icon">
 

@@ -1,4 +1,6 @@
 const bill = document.querySelector("#bill");
+const billContainer = document.querySelector("#billContainer");
+const billMessageError = document.querySelector("#billMessageError");
 const people = document.querySelector("#people");
 const peopleContainer = document.querySelector("#peopleContainer");
 const messageError = document.querySelector("#messageError");
@@ -26,6 +28,14 @@ function calculator() {
         };
     });
 
+    if(billValue <= 0) {
+        billContainer.classList.add("fieldset__input--error");
+        billMessageError.style.display = "block";
+    } else {
+        billContainer.classList.remove("fieldset__input--error");
+        billMessageError.style.display = "none";
+    }
+
     if(peopleValue <= 0) {
         peopleContainer.classList.add("fieldset__input--error");
         messageError.style.display = "block"
@@ -42,7 +52,7 @@ function calculator() {
         tip = customValue / 100;
     }
 
-    if(!isNaN(billValue) && !isNaN(peopleValue) && !isNaN(tip) && peopleValue > 0) {
+    if( !isNaN(billValue) && !isNaN(peopleValue) && !isNaN(tip) && peopleValue > 0 && billValue > 0 ) {
 
         tipPerPerson = parseFloat(((billValue * tip) / peopleValue).toFixed(2));
         totalPerPerson = ((billValue / peopleValue) + tipPerPerson).toFixed(2);

@@ -210,6 +210,17 @@ body {
   color: var(--grey-500);
 }
 
+.bill-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-information__error {
+  display: none;
+  color: var(--orange-400);
+}
+
 .fieldset__input {
   position: relative;
 }
