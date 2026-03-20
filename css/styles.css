@@ -231,6 +231,12 @@ body {
   cursor: pointer;
 }
 
+.fieldset__input--error {
+  border: 0.2rem solid var(--orange-400);
+  border-radius: 0.5rem;
+  outline: 0.2rem solid var(--orange-400);
+}
+
 .fieldset__input input:focus {
   outline: 0.2rem solid var(--green-400);
 }
@@ -298,6 +304,17 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.people-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.people-information__error {
+  display: none;
+  color: var(--orange-400);
 }
 
 .results-container {

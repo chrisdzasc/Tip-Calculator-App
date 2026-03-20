@@ -28,7 +28,7 @@
 
           <img src="./images/icon-dollar.svg" alt="dollar icon">
 
-          <input class="text--p3" type="number" id="bill" name="bill" placeholder="0">          
+          <input class="text--p3" type="number" id="bill" name="bill" placeholder="0" min="1">          
         </div>
       </fieldset>
 
@@ -68,12 +68,18 @@
       </fieldset>
 
       <fieldset class="fieldset">
-        <label class="fieldset__title text--p5" for="people">Number of People</label>
-        <div class="fieldset__input">
+
+        <div class="people-information">
+          <label class="fieldset__title text--p5" for="people">Number of People</label>
+
+          <p class="people-information__error text--p5" id="messageError">Invalid number</p>
+        </div>
+
+        <div class="fieldset__input" id="peopleContainer">
 
           <img src="./images/icon-person.svg" alt="icon person">
 
-          <input class="text--p3" type="number" id="people" name="people" placeholder="0">          
+          <input class="text--p3" type="number" id="people" name="people" placeholder="0" min="1">          
         </div>
       </fieldset>
     </form>
