@@ -26,8 +26,15 @@ function calculator() {
     tipPercentage.forEach(button => {
         if(button.checked) {
             percentageValue = parseFloat(button.value);
+            customTip.value = "";
         };
     });
+
+    if(!isNaN(customValue)) {
+        tipPercentage.forEach(button => {
+            button.checked = false;
+        })
+    }
 
     if(billValue <= 0) {
         billContainer.classList.add("fieldset__input--error");
