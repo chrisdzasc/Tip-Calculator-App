@@ -38,7 +38,12 @@
       </fieldset>
 
       <fieldset class="tip-percentage">
-        <legend class="tip-percentage__heading text--p5">Select Tip %</legend>
+        <div class="tip-percentage-information">
+          <legend class="tip-percentage__heading text--p5">Select Tip %</legend>
+
+          <p class="tip-percentage-information__error text--p5" id="customTipMessageError">Invalid tip %</p>
+        </div>
+
 
         <div class="grid">
           <div>
@@ -67,7 +72,7 @@
           </div>
 
           <div>
-            <input class="grid__write-button text--p3" type="number" id="custom" name="tip" placeholder="Custom">
+            <input class="grid__write-button text--p3" type="number" id="custom" name="tip" placeholder="Custom" min="1" max="100">
           </div>
         </div>
       </fieldset>

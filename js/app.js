@@ -6,6 +6,7 @@ const peopleContainer = document.querySelector("#peopleContainer");
 const messageError = document.querySelector("#messageError");
 const tipPercentage = document.querySelectorAll('.grid__button');
 const customTip = document.querySelector("#custom");
+const customTipMessageError = document.querySelector("#customTipMessageError");
 const totalTip = document.querySelector("#total-tip");
 const totalBill = document.querySelector("#total-bill");
 const resetButton = document.querySelector("#reset-button");
@@ -52,7 +53,15 @@ function calculator() {
         tip = customValue / 100;
     }
 
-    if( !isNaN(billValue) && !isNaN(peopleValue) && !isNaN(tip) && peopleValue > 0 && billValue > 0 ) {
+    if(customValue <= 0 || customValue > 100) {
+        customTip.classList.add("grid__write-button--error");
+        customTipMessageError.style.display = "block";
+    } else {
+        customTip.classList.remove("grid__write-button--error");
+        customTipMessageError.style.display = "none";
+    }
+
+    if( !isNaN(billValue) && !isNaN(peopleValue) && !isNaN(tip) && peopleValue > 0 && billValue > 0 && (isNaN(customValue) || customValue > 0 && customValue <= 100) ) {
 
         tipPerPerson = parseFloat(((billValue * tip) / peopleValue).toFixed(2));
         totalPerPerson = ((billValue / peopleValue) + tipPerPerson).toFixed(2);
