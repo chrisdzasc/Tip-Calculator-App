@@ -47,7 +47,6 @@ function calculator() {
     if(peopleValue <= 0) {
         peopleContainer.classList.add("fieldset__input--error");
         messageError.style.display = "block"
-
     } else {
         peopleContainer.classList.remove("fieldset__input--error");
         messageError.style.display = "none"
@@ -83,6 +82,15 @@ function calculator() {
 function resetForm() {
     totalTip.textContent = "$0.00";
     totalBill.textContent = "$0.00";
+
+    billContainer.classList.remove("fieldset__input--error");
+    billMessageError.style.display = "none";
+
+    customTip.classList.remove("grid__write-button--error");
+    customTipMessageError.style.display = "none";
+
+    peopleContainer.classList.remove("fieldset__input--error");
+    messageError.style.display = "none"
 }
 
 bill.addEventListener('input', calculator);
