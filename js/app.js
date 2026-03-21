@@ -3,7 +3,7 @@ const billContainer = document.querySelector("#billContainer");
 const billMessageError = document.querySelector("#billMessageError");
 const people = document.querySelector("#people");
 const peopleContainer = document.querySelector("#peopleContainer");
-const messageError = document.querySelector("#messageError");
+const peopleMessageError = document.querySelector("#peopleMessageError");
 const tipPercentage = document.querySelectorAll('.grid__button');
 const customTip = document.querySelector("#custom");
 const customTipMessageError = document.querySelector("#customTipMessageError");
@@ -46,14 +46,13 @@ function calculator() {
 
     if(peopleValue <= 0) {
         peopleContainer.classList.add("fieldset__input--error");
-        messageError.style.display = "block"
+        peopleMessageError.style.display = "block"
     } else {
         peopleContainer.classList.remove("fieldset__input--error");
-        messageError.style.display = "none"
+        peopleMessageError.style.display = "none"
     }
 
     if(isNaN(customValue)) {
-        // El custom value está vacio
         tip = percentageValue / 100;
     } else {
         tip = customValue / 100;
@@ -90,7 +89,7 @@ function resetForm() {
     customTipMessageError.style.display = "none";
 
     peopleContainer.classList.remove("fieldset__input--error");
-    messageError.style.display = "none"
+    peopleMessageError.style.display = "none"
 }
 
 bill.addEventListener('input', calculator);
