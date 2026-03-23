@@ -82,6 +82,10 @@ function resetForm() {
     totalTip.textContent = "$0.00";
     totalBill.textContent = "$0.00";
 
+    bill.value = "";
+    people.value = "";
+    customTip.value = "";
+
     billContainer.classList.remove("fieldset__input--error");
     billMessageError.style.display = "none";
 
