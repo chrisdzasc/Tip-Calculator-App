@@ -65,4 +65,4 @@ The challenge was to build out this **tip calculator app 💸** and get it looki
 
 - 💼 LinkedIn - [Christian Diaz](https://www.linkedin.com/in/chris-diazasc/)
 - 👾 Frontend Mentor - [@chrisdzasc](https://www.frontendmentor.io/profile/chrisdzasc)
-- 🧩 Frontend Mentor Solution - []()
+- 🧩 Frontend Mentor Solution - [💸 Tip Calculator App 📱| Vanilla JS & Flexbox with CSS Grid 🧮](https://www.frontendmentor.io/solutions/-tip-calculator-app-vanilla-js-and-flexbox-with-css-grid-DZoyVe7o7g)
